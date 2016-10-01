@@ -81,7 +81,7 @@ public class AlumnosBean implements Serializable{
         }
         catch(Exception ex)
         {
-            log.error("Error al Registrar Alumno");
+            log.error("Error al Registrar Alumno :" + ex);
             ctx.execute("setMessage('MESS_ERRO', 'Atención', 'Error al guardar ')");
         }
         finally
@@ -104,7 +104,7 @@ public class AlumnosBean implements Serializable{
         }
         catch(Exception ex)
         {
-            log.error("Error al modificar Alumno");
+            log.error("Error al modificar Alumno: " + ex);
             ctx.execute("setMessage('MESS_ERRO', 'Atención', 'Error al modificar ')");
         }
         finally
@@ -126,7 +126,7 @@ public class AlumnosBean implements Serializable{
         }
         catch(Exception ex)
         {
-            log.error("Error al eliminar Alumno");
+            log.error("Error al eliminar Alumno:" +  ex);
             ctx.execute("setMessage('MESS_ERRO', 'Atención', 'Error al eliminar')");
         }
         finally
@@ -165,7 +165,7 @@ public class AlumnosBean implements Serializable{
         }
         catch(Exception ex)
         {
-            log.error("Error al consultar Aumno");
+            log.error("Error al consultar Aumno: "+ ex);
             ctx.execute("setMessage('MESS_ERRO', 'Atención', 'Error al consultar')");
         }
         finally

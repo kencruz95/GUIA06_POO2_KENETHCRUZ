@@ -25,7 +25,7 @@ public class LOG4J {
         }
         
     }
-    //El mas básico, equivalente a un System.out.println
+    //Muestra un mensaje tal como system.out.println
     public void trace(String mens){
         try{
             log.trace(mens);
@@ -36,7 +36,7 @@ public class LOG4J {
         }
         
     }
-    //Muy util para procesos, para valores, variables
+    //Se utiliza para valores tales como variables
     public void debug(String mens){
         try{
             log.debug(mens);
@@ -47,7 +47,7 @@ public class LOG4J {
         }
         
     }
-    //Información que puede ser importante
+    //Se utiliza para mensajes de confirmacion 
     public void info(String mens){
         try{
             log.info(mens);
@@ -58,7 +58,7 @@ public class LOG4J {
             System.out.println("Error con LOG: "+e);
         }
     }
-    //Fallos no críticos
+    //Se utiliza para mensaje de que todo salio en un proceso 
     public void warn(String mens){
         try{
             log.warn(mens);
@@ -68,7 +68,7 @@ public class LOG4J {
             System.out.println("Error con LOG: "+e);
         }
     }
-    //Errores importantes, que no obligan a cerrar la aplicación
+    //Se utliza para errores que no obligan a cerrar la aplicación
     public void error(String mens){
         try{
             log.error(mens);
@@ -78,7 +78,7 @@ public class LOG4J {
             System.out.println("Error con LOG: "+e);
         }
     }
-    //Errores importantes que obligan a cerrar la aplicación
+    //Se utiliza que muestra errores que obligan a cerrar la aplicación
     public void fatal(String mens){
         try{
             log.fatal(mens);
