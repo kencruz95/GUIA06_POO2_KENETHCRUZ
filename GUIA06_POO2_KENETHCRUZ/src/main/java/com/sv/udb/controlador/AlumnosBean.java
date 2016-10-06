@@ -60,6 +60,7 @@ public class AlumnosBean implements Serializable{
         this.limpForm();
         this.consTodo();
         log = new LOG4J();
+        log.debug("Se ha iniciado el modelo alumnos " );
     }
     
     public void limpForm()
@@ -73,6 +74,7 @@ public class AlumnosBean implements Serializable{
         RequestContext ctx = RequestContext.getCurrentInstance(); //Capturo el contexto de la página
         try
         {
+            //this.objeAlum.setNombAlum("");
             FCDEAlum.create(this.objeAlum);
             this.listAlum.add(this.objeAlum);
             log.info("Alumno Registrado: "+objeAlum.getNombAlum()+" "+objeAlum.getApelAlum());
@@ -140,9 +142,11 @@ public class AlumnosBean implements Serializable{
         try
         {
             this.listAlum = FCDEAlum.findAll();
+            
         }
         catch(Exception ex)
         {
+            
             ex.printStackTrace();
         }
         finally

@@ -110,6 +110,7 @@ public class CursosBean implements Serializable{
         this.limpForm();
         this.consTodo();
         log = new LOG4J();
+        log.debug("Se ha iniciado el modelo curso " );
     }
     
     public void limpForm()

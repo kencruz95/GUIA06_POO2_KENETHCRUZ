@@ -43,6 +43,7 @@ public class GruposBean implements Serializable{
         this.limpForm();
         this.consTodo();
         log = new LOG4J();
+        log.debug("Se ha iniciado el modelo grupos " );
     }
     
     public void limpForm()

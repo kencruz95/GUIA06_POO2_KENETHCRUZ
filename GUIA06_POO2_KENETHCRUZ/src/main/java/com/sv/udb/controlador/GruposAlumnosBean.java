@@ -68,6 +68,7 @@ public class GruposAlumnosBean implements Serializable{
         this.limpForm();
         this.consTodo();
         log = new LOG4J();
+        log.debug("Se ha iniciado el modelo grupo-alumnos " );
     }
     
     public void limpForm()

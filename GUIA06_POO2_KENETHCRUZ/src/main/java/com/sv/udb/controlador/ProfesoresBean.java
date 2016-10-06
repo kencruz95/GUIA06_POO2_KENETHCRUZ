@@ -106,6 +106,7 @@ public class ProfesoresBean implements Serializable{
         this.limpForm();
         this.consTodo();
         log = new LOG4J();
+        log.debug("Se ha iniciado el modelo profesores " );
     }
     
     public void limpForm()

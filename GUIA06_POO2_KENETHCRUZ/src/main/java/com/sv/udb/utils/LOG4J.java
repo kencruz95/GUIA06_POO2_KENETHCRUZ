@@ -21,7 +21,7 @@ public class LOG4J {
         }
         catch(Exception e)
         {
-            System.out.println("Error con LOG: "+e);
+            System.out.println("ERROR: Algo paso con el LOG: "+e);
         }
         
     }
@@ -32,7 +32,7 @@ public class LOG4J {
         }
         catch(Exception e)
         {
-            System.out.println("Error con LOG: "+e);
+            System.out.println("ERROR: Algo paso con el LOG: "+e);
         }
         
     }
@@ -40,10 +40,11 @@ public class LOG4J {
     public void debug(String mens){
         try{
             log.debug(mens);
+            System.out.println("SE HA DEPURADO LA APP");
         }
         catch(Exception e)
         {
-            System.out.println("Error con LOG: "+e);
+            System.out.println("ERROR: Algo paso con el LOG: "+e);
         }
         
     }
@@ -51,11 +52,11 @@ public class LOG4J {
     public void info(String mens){
         try{
             log.info(mens);
-            System.out.println("LOG Generado");
+            System.out.println("NUEVO LOG CREADO");
         }
         catch(Exception e)
         {
-            System.out.println("Error con LOG: "+e);
+            System.out.println("ERROR: Algo paso con el LOG: "+e);
         }
     }
     //Se utiliza para mensaje de que todo salio en un proceso 
@@ -65,17 +66,18 @@ public class LOG4J {
         }
         catch(Exception e)
         {
-            System.out.println("Error con LOG: "+e);
+            System.out.println("ERROR: Algo paso con el LOG: "+e);
         }
     }
     //Se utliza para errores que no obligan a cerrar la aplicación
     public void error(String mens){
         try{
             log.error(mens);
+            System.out.println("ERROR: HUBO UN PROBLEMA, REVISA TU APP");
         }
         catch(Exception e)
         {
-            System.out.println("Error con LOG: "+e);
+           System.out.println("ERROR: Algo paso con el LOG: "+e);
         }
     }
     //Se utiliza que muestra errores que obligan a cerrar la aplicación
@@ -85,7 +87,7 @@ public class LOG4J {
         }
         catch(Exception e)
         {
-            System.out.println("Error con LOG: "+e);
+            System.out.println("ERROR: Algo paso con el LOG: "+e);
         }
     }
     
